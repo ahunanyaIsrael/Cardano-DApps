@@ -1,0 +1,98 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+/* Navigation styling */
+.navigation {
+    background-color: #28a745; /* Green background */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Logo animation on hover */
+.logo img:hover {
+    transform: rotate(360deg);
+}
+
+.connect-to-wallet-wrapper .connect {
+    display: flex;
+    align-items: center;
+}
+
+#connect-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #28a745;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Connect button hover effect */
+#connect-button:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Centering the form container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 80px); /* Account for the height of the navigation */
+}
+
+/* Form styling */
+.form-wrapper {
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Form button hover effect */
+form button:hover {
+    background-color: #218838;
+}

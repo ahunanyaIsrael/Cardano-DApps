@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send ADA</title>
+    <link rel="stylesheet" href="/css/mintstyle.css">
+    <script type="module" src="/Js/sendAda.js"></script>
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo-wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="/images/izyContract.jpeg" alt=""></a>
+            </div>
+        </div>
+        <div class="connect-to-wallet-wrapper">
+            <div id="connect">
+                <button id="connect-button">Connect Wallet</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-wrapper">
+            <form id="send">
+                <span>Address: <input type="text" id="address" placeholder="Address" disabled></span>
+                <span>Amount: <input type="text" id="amount" placeholder="Amount" disabled></span>
+                <button type="submit" disabled>Send Ada</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

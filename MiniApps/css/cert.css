@@ -1,0 +1,176 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0e6ff;
+    height: 100%;
+}
+
+/* Navigation styling */
+.navigation {
+    background: linear-gradient(90deg, #6a0dad 0%, #9b59b6 100%);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.5s ease-out;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    margin-right: 15px;
+}
+
+.logo h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
+}
+
+.connect-to-wallet-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#connect-button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #6a0dad;
+    border: 2px solid #6a0dad;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#connect-button:hover {
+    background-color: #9b59b6;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Centering the form container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 80px);
+    padding-top: 20px;
+}
+
+.form-wrapper {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.form-wrapper h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background-color: #6a0dad;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form span {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+form input[type="text"], form input[type="date"] {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus, form input[type="date"]:focus {
+    border-color: #6a0dad;
+    box-shadow: 0px 0px 8px rgba(106, 13, 173, 0.5);
+}
+
+form button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+form button:hover {
+    background-color: #9b59b6;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer styling */
+.footer {
+    background-color: #6a0dad;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

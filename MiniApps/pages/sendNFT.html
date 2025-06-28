@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send NFTs</title>
+    <link rel="stylesheet" href="/css/sndNFT.css">
+    <script type="module" src="/Js/sendNFT.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <form id="sendAsset">
+                <div class="logo">
+                    <img src="../images/coxygen.png" alt="Logo">
+                </div>
+                <h1>SEND Tokens</h1>
+                <span><b>Minting Policy:</b> <input type="text" id="mph" placeholder="Minting Policy" disabled></span>
+                <span><b>Asset Name:</b> <input type="text" id="assetName" placeholder="Asset Name" disabled></span>
+                <span><b>Quantity:</b> <input type="number" id="quantity" min="1" placeholder="Quantity" disabled></span>
+                <span><b>Address:</b> <input type="text" id="address" placeholder="Address" disabled></span>
+                <div class="buttons">
+                    <button id="connect-button" type="button">Connect Wallet</button>
+                    <button type="submit" disabled>Send NFT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

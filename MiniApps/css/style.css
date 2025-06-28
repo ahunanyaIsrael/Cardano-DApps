@@ -1,0 +1,46 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering the wrapper on the page */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+/* Styling the form container */
+.form-container {
+    text-align: center;
+}
+
+/* Styling the buttons */
+button {
+    
+    padding: 15px 30px;
+    margin: 15px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+}
+
+/* Button active effect */
+button:active {
+    transform: scale(0.95);
+}

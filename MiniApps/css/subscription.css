@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1c1c1c;
+    border-bottom: 2px solid #e50914;
+}
+
+.logo h3 {
+    margin: 0;
+    color: #e50914;
+    font-size: 24px;
+}
+
+.img-logo {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #e50914;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background: url('/images/movie.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f40612;
+}
+
+/* Subscription Plans */
+.subscription-plans {
+    padding: 50px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.subscription-plans h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #e50914;
+}
+
+.plan-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plan-card {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    background-color: #e50914;
+}
+
+.plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.plan-card .price {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.plan-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button1:hover {
+    background-color: #1c1c1c;
+}
+
+.buy-button2:hover {
+    background-color: #1c1c1c;
+}
+
+.buy-button3:hover {
+    background-color: #1c1c1c;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minting NFTs</title>
+    <link rel="stylesheet" href="/css/cert.css">
+    <script type="module" src="/Js/certificate.js"></script>
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo-wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/images/izyContract.jpeg" alt="Logo">
+                </a>
+                <h2>NFT CERTIFICATE</h2>
+            </div>
+        </div>
+        <div class="connect-to-wallet-wrapper">
+            <div id="connect">
+                <button id="connect-button">Connect Wallet</button>
+            </div>
+        </div>
+    </div>
+    <div id="metadata"></div>
+    <div class="container">
+        <div class="form-wrapper">
+            <h1>Course Certification</h1>
+            <form id="mintNFT">
+                <span>Certificate Name: <input type="text" id="name" placeholder="Certificate Name" disabled></span>
+                <span>Course Name: <input type="text" id="Cname" placeholder="Course Name" disabled></span>
+                <span>Recipient: <input type="text" id="recipient" placeholder="Recipient" disabled></span>
+                <span>Date of Issuance: <input type="date" id="date" placeholder="Issuance Date" disabled></span>
+                <span>Unique Identifier: <input type="text" id="Unique" placeholder="Unique Identifier" disabled></span>
+                <span>Description: <input type="text" id="description" placeholder="Description" disabled></span>
+                <span>Image: <input type="text" id="img" placeholder="Image URL" disabled></span>
+                <button type="submit" disabled>Mint Certificate</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Your Brand. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
